@@ -1,5 +1,14 @@
 <template>
-    <lightning-card title="car Tile List" icon-name="standard:calibration">
-        
+    <lightning-card title="Cars Available" icon-name="standard:calibration">
+        <div class="slds-p-around_medium wrapper">
+            <template if:true={cars}>
+                <div class="content">
+                    <template for:each={cars} for:item="car">
+                        <!-- <div key={car.id}>{car.Name}</div> -->
+                        <c-car-tile key={car.id} car={car}></c-car-tile>
+                    </template>
+                </div>
+            </template>
+        </div>
     </lightning-card>
 </template>
