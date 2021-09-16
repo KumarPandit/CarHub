@@ -1,4 +1,4 @@
-import { LightningElement, wire } from 'lwc';
+import { LightningElement, wire} from 'lwc';
 
 
 //Car__c Schema
